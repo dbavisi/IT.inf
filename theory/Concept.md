@@ -1,78 +1,84 @@
-# Cpt.0/1: Core Concepts
-`Cpt.0/1` is the **Collection `IT.7/1`** of **Concepts `IT.0/1`** upon
-which the `IT.inf` is built.
+# Core Concepts
 
-In accordance with **Information Tagging Syntax `IT.2/1`**,
-each section title within this document is inherently treated as
-an **Information Tag `IT.1/1`**.
+A Concept is an acknowledgement of something.
 
-Cpt.1/1: Information Tagging
-----------------------------
-**Information Tagging `IT.1/1`** is a core **Concept `IT.0/1`** of
-the `IT.inf`.
-This section illustrates the **Information Tagging Syntax `IT.2/1`**,
-and defines the **Completeness of Tag `IT.3/1`** crucial for defining
-level of specification of the **Tags `IT.1/1`** within `IT.inf`.
+An Attribute is a concept that acknowledges a characteristic of some concept.
 
-### IT.2/1: Information Tagging Syntax
-Each **Information Tag `IT.1/1`** is a **Concept `IT.0/1`** consisting
-of at least the following **Attributes `IT.14/1`**.
+> Acknowledgement is an attribute of every concept.
 
-+ **Type `Atr.1/1`** refers to a category of **Tags `IT.1/1`**.
-+ **Identifier `Atr.2/1`** denotes a unique identifier
-  that distinguishes each **Tag `IT.1/1`** from others of
-  the same **Type `Atr.0/1`**.
-+ **Representation Identifier `Atr.3/1`** refers to an alternate
-  **Representation `IT.15/1`** of the underlying **Concept `IT.0/1`**.
-+ **Name `Atr.4/1`** refers to the term associated with **Tag `IT.1/1`**.
-+ **Value `Atr.5/1`** refers to the underlying **Concept `IT.0/1`**
-  associated with the **Tag `IT.1/1`**.
+A Comparison is the concept of identification and acknowledgement of some attributes amongst given concepts.
 
-### IT.3/1: Completeness of Tag
-The **Completeness of Tag `IT.3/1`** is determined by
-**Tag Value `Atr.5/1`** and can be classified into the following:
+The given concepts are Comparable if the required attributes can be acknowledged, and the required attributes are also comparable.
 
-+ **Fully-defined `IT.4/1`**, represents a **Concept `IT.0/1`** that is
-  closed in terms of its definition and has all necessary
-  **Attributes `IT.14/1`** explicitly defined.
-+ **Eventually-defined `IT.5/1`**, represents a **Concept `IT.0/1`** that
-  is expected to be **Fully-defined `IT.4/1`** when the underlying
-  **Concepts `IT.0/1`** are expected to be **Fully-defined `IT.4/1`**
-  but lacks clarity otherwise.
-+ **Undefined `IT.6/1`**, represents a **Concept `IT.0/1`** that
-  completely lacks clarity unless explicitly modified.
+> Every concept is comparable with itself.
 
-> **Information Tagging `IT.1/1`** is not about naming what you see;
-> Its about marking what you notice.
+> Comparable is an attribute of the given concepts within the context of the comparison.
 
-Cpt.2/1: Fundamental Concepts
------------------------------
-This section defines the core **Concepts `IT.0/1`** that form the
-foundation of the `IT.inf`.
+The given concepts are Uncomparable if the required attributes cannot be acknowledged, or the required attributes are not comparable.
 
-+ **Concept `IT.0/1`**: The base type for representing anything that can
-  be defined or processed within the `IT.inf`.
-+ **Collection `IT.7/1`**: Aggregation of related **Concepts `IT.0/1`**
-  and/or **Attributes `IT.14/1`**.
-+ **Data `IT.8/1`**: inherently useless in its raw form.
-+ **Information `IT.9/1`**: A **Concept `IT.0/1`** that represents the
-  **Data `IT.8/1`** in a may, making it useful.
-+ **Knowledge `IT.10/1`**: A type of **Concept `IT.0/1`** that represents
-  the ability to transform **Data `IT.8/1`** into **Information `IT.9/1`**
-  through some process.
-+ **Inference `IT.11/1`**: The process of transformation which is
-  described by the **Knowledge `IT.10/1`**.
-+ **Inference Engine `IT.12/1`**: The facilitator of **Inference `IT.11/1`**.
-+ **Spirit `IT.13/1`**: The facilitator of **Knowledge `IT.10/1`**.
+> Uncomparable is an attribute of the given concepts within the context of the comparison.
 
-### IT.14/1: Attribute
-**Attributes `IT.14/1`** are intrinsic properties of a **Concept `IT.0/1`**
-that define its characteristics or qualities.
-These **Attributes `IT.14/1`** can also be passed as inputs to the
-**Inference Engine `IT.12/1`**, making them a **Concept `IT.0/1`** in
-themselves, subject to transformation and processing.
+The given concepts are the Same if the given concepts are comparable, and all of their attributes are also the same.
 
-### IT.15/1: Representation
-**Representation ``IT.15/1``** refers to the transformation of the same
-**Concept ``IT.0/1``** by varying **Attributes ``IT.14/1``**, while
-retaining the underlying meaning.
+> Every concept is the same with itself.
+
+> Same is an attribute of every concept within the context of the comparison with itself.
+
+The given concepts are Different if the given concepts are comparable, but some of their attributes are not comparable.
+
+> Different is an attribute of the given concepts within the context of the comparison.
+
+The given concepts are Similar if the given concepts are comparable, and all of their attributes are also comparable, but some of their attributes are not the same.
+
+> Similar is an attribute of the given concepts within the context of the comparison.
+
+A Representation is a concept that acknowledges only the required attributes of the given concept within the context of the comparison.
+
+> Every representation of a concept is an attribute of the given concept.
+
+> Similar is an attribute of every representation of a concept and the given concept within the context of the comparison.
+
+A Collection is the concept of aggregation of similar concepts.
+
+> Membership to the collection is an attribute of the given concepts within the context of the collection.
+
+# Notations
+A Notation is the collection of concepts required for the representation of any concept.
+
+`C` is the notation for the representation of the collection of every concept with the acknowledgement attribute.
+
+`Attr(cpt)` is the notation for the representation of the collection of every attribute of the given concept `cpt`.
+
+`cpt.attr` is the notation for the representation of the given attribute `attr` of the given concept `cpt`.
+
+`cmp(cpt, ...)` is the notation for the representation of the given comparison `cmp` of the given concept `cpt` with every given concepts `...`.
+
+`cmp.Comparable(cpt, ...)` is the notation for the representation of the given comparison `cmp` of the given concept `cpt` with every given concepts `...` that are comparable.
+
+`cmp.Uncomparable(cpt, ...)` is the notation for the representation of the given comparison `cmp` of the given concept `cpt` with every given concepts `...` that are uncomparable.
+
+`cmp.Same(cpt, ...)` is the notation for the representation of the given comparison `cmp` of the given concept `cpt` with every given concepts `...` that are the same.
+
+`cmp.Different(cpt, ...)` is the notation for the representation of the given comparison `cmp` of the given concept `cpt` with every given concepts `...` that are different.
+
+`cmp.Similar(cpt, ...)` is the notation for the representation of the given comparison `cmp` of the given concept `cpt` with every given concepts `...` that are similar.
+
+`Repr(cpt)` is the notation for the representation of the collection of every representation of the given concept `cpt`.
+
+`member(cpt, cll)` is the notation for the representation of the membership attribute of the given concept `cpt` within the given collection `cll`.
+
+`Cll(cpt)` is the notation for the representation of the collection of every collection that the given concept `cpt` is a member of.
+
+`not(cll)` is the notation for the representation of the collection of every concept that is not a member of the given collection `cll`.
+
+`Union(...)` is the notation for the representation of the collection of every concept that is a member of any of the given collections `...`.
+
+`Inter(...)` is the notation for the representation of the collection of every concept that is a member of every given collections `...`.
+
+```
+cmp(cpt, ...) = Union(cmp.Comparable(cpt, ...), cmp.Uncomparable(cpt, ...))
+```
+
+```
+cmp.Comparable(cpt, ...) = Union(cmp.Same(cpt, ...), cmp.Different(cpt, ...), cmp.Similar(cpt, ...))
+```
